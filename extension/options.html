@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eco-Cart AI settings</title>
+    <link rel="stylesheet" href="options.css" />
+  </head>
+  <body>
+    <main>
+      <span class="eyebrow">ECO-CART AI</span>
+      <h1>Extension settings</h1>
+      <p>Connect this extension to the existing EcoCart API and dashboard.</p>
+      <form id="settings-form">
+        <label for="api-url">EcoCart API base URL</label>
+        <input id="api-url" name="api-url" type="url" placeholder="http://localhost:8000" required />
+        <label for="dashboard-url">EcoCart dashboard URL</label>
+        <input id="dashboard-url" name="dashboard-url" type="url" placeholder="http://localhost:5173" required />
+        <button type="submit">Save connection settings</button>
+        <span id="status" role="status"></span>
+      </form>
+    </main>
+    <script src="options.js"></script>
+  </body>
+</html>

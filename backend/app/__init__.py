@@ -1,0 +1,1 @@
+"""Eco-Cart AI backend application."""

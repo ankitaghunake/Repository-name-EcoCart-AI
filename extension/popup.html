@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EcoCart AI Shopping Assistant</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="popup-shell">
+      <header class="popup-header">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M20 4c-8 0-14 3-14 10a6 6 0 0 0 6 6c7 0 8-8 8-16Z" stroke="currentColor" stroke-width="1.8"/><path d="M4 21c2-5 6-8 12-11" stroke="currentColor" stroke-width="1.8"/></svg></span>
+        <div class="brand-copy"><p class="brand-name">EcoCart AI</p><p class="tagline">Sustainable Shopping Assistant</p></div>
+        <button id="settings" class="icon-button" title="API settings" aria-label="API settings">⚙</button>
+      </header>
+      <div class="page-context"><span class="eyebrow">SHOPPING CART</span><span id="page-host" class="page-host">Checking current tab</span></div>
+      <section class="cart-section">
+        <div class="section-heading"><div><span class="eyebrow">YOUR SELECTION</span><h1>Select products to analyze</h1></div><span id="product-count" class="count-badge">0</span></div>
+        <div id="cart-state" class="state-panel"><span class="spinner"></span><span>Reading cart products...</span></div>
+        <div id="cart-products" class="cart-products" hidden></div>
+        <button id="analyze-button" class="analyze-button" type="button" disabled><span>Analyze selected products</span><span aria-hidden="true">→</span></button>
+        <p id="action-status" class="action-status" role="status"></p>
+      </section>
+      <section id="analysis-section" class="analysis-section" aria-live="polite"></section>
+      <footer><span>Dataset-backed estimates, not audited lifecycle assessments.</span><button id="dashboard-link" type="button">Full EcoCart analysis ↗</button></footer>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>

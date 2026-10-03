@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@700;800&display=swap');
+
+:root { font-family: 'DM Sans', sans-serif; color: #203027; background: #f4f5ed; }
+* { box-sizing: border-box; }
+body { min-width: 320px; margin: 0; padding: 48px 20px; }
+main { max-width: 480px; margin: 0 auto; padding: 28px; border: 1px solid #e2e8dd; border-radius: 6px; background: #fffefa; }
+.eyebrow { color: #67826d; font-size: 10px; font-weight: 700; letter-spacing: .1em; }
+h1 { margin: 9px 0; font: 800 23px 'Manrope', sans-serif; }
+p { color: #737f74; font-size: 13px; line-height: 1.6; }
+form { display: grid; gap: 9px; margin-top: 24px; }
+label { color: #526052; font-size: 11px; font-weight: 700; }
+input { padding: 11px; border: 1px solid #dfe5dc; border-radius: 4px; font: inherit; font-size: 12px; }
+button { justify-self: start; margin-top: 4px; padding: 10px 13px; border: 0; border-radius: 4px; color: white; background: #2d6345; font-size: 11px; font-weight: 600; cursor: pointer; }
+#status { min-height: 16px; color: #4e7b51; font-size: 11px; }

@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+backend/.venv/
+backend/venv/
+backend/.env
+backend/data/feedback.json
+backend/data/users.json
+backend/data/products.local.json
+backend/ml/eco_score_model.joblib
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+
+# Local tooling
+.vscode/
+.DS_Store
+Thumbs.db
